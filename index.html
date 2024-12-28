@@ -1,1 +1,129 @@
-# Test website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phoebe Klett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LF91Y9JWY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4LF91Y9JWY');
+    </script>
+    
+
+    <style>
+        body {
+            margin: 50px;
+            font-family: 'Times New Roman', serif;
+            background-color: #ffffff; /* Crisp white background */
+            color: #333;
+        }
+        #nav {
+            position: absolute;
+            top: 50px;
+            left: 75px;
+            width: 30px;
+            height: auto;
+        }
+        #imageContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        #highQualityImage {
+            height: auto;
+            max-height: 80vh; /* Adjusted for better responsiveness */
+            width: 100%;
+            max-width: 100vw; /* Ensure images do not exceed viewport width */
+            object-fit: contain;
+            image-rendering: optimizeQuality;
+        }
+        #photoCorner {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            height: 30%;
+            width: 30%;
+            
+            object-fit: contain;
+            image-rendering: optimizeQuality;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 30px;
+            }
+            #nav {
+                width: 20px;
+                top: 10px;
+                left: 15px;
+            }
+            #highQualityImage {
+                max-height: 80vh; /* Reduced height for smaller screens */
+            }
+            #photoCorner {
+                width: 75px; /* Scale down the photo for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="index.html">
+        <img id="nav" src="assets/nav.png" alt="nav">
+    </a>
+    <div id="imageContainer">
+        <img id="highQualityImage" src="assets/invite.png" alt="invite">
+    </div> -->
+    <b>Phoebe Love Klett</b>
+    <br>
+    Using math and computer science to formalize natural and artificial cognition. 
+    <br>
+    <br>
+
+    Twitter: <a href="https://x.com/KlettPhoebe" target="_blank">@KlettPhoebe</a>
+    &nbsp;&nbsp;&nbsp;
+    YouTube: <a href="https://www.youtube.com/@phoebeklett/playlists" target="_blank">@phoebeklett</a>
+    <br>
+    <br>
+
+    <b>Blogs</b>
+    <br>
+    <!-- On the role of physics in mathematical meaning -->
+    <a href="https://willzeng.com/shared/math.html" target="_blank">Mathematical meaning is not captured by meaning-as-use</a>    
+    <br>
+    <br>
+
+    <b>Research</b> 
+    <br>
+    <!-- Thermodynamic Bayesian Inference  -->
+    <a href="https://arxiv.org/abs/2410.01793" target="_blank">Thermodynamic Bayesian Inference </a>    
+    <br>
+    <br>
+
+    <!-- Bayesian Language Models -->
+    <a href="https://arxiv.org/abs/2406.00104" target="_blank">Scalable Bayesian Language Models </a>    
+    <br>
+    <br>
+
+    <!-- Extended Mind Transformers -->
+    <a href="https://arxiv.org/abs/2406.02332" target="_blank">Extended Mind Transformers </a>, 
+    <a href="https://www.youtube.com/watch?v=cS6M6Jec0lU",target="_blank"> Talk </a> 
+    <br>
+    <br>
+
+    Organizing <a href="https://practiceofproof.com" target="_blank">Practice of Proof</a>    
+
+
+    <!-- Photo in the upper-right corner -->
+    <img id="photoCorner" src="assets/profile.jpg" alt="profile photo">
+</body>
+</html>
