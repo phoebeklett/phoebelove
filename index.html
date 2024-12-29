@@ -23,37 +23,14 @@
             background-color: #ffffff; /* Crisp white background */
             color: #333;
         }
-        #nav {
-            position: absolute;
-            top: 50px;
-            left: 75px;
-            width: 30px;
-            height: auto;
-        }
-        #imageContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-        }
-        #highQualityImage {
-            height: auto;
-            max-height: 80vh; /* Adjusted for better responsiveness */
-            width: 100%;
-            max-width: 100vw; /* Ensure images do not exceed viewport width */
-            object-fit: contain;
-            image-rendering: optimizeQuality;
-        }
+        
         #photoCorner {
             position: absolute;
             top: 20px;
             right: 20px;
 
             height: 30%;
-            width: 30%;
-            
+            width: 30%;            
             object-fit: contain;
             image-rendering: optimizeQuality;
         }
@@ -62,27 +39,15 @@
             body {
                 margin: 30px;
             }
-            #nav {
-                width: 20px;
-                top: 10px;
-                left: 15px;
-            }
-            #highQualityImage {
-                max-height: 80vh; /* Reduced height for smaller screens */
-            }
             #photoCorner {
-                width: 75px; /* Scale down the photo for smaller screens */
+                height: 10px; /* Reduce size for smaller screens */
+                width: 10px; /* Scale down the photo for smaller screens */
             }
         }
+
     </style>
 </head>
 <body>
-    <!-- <a href="index.html">
-        <img id="nav" src="assets/nav.png" alt="nav">
-    </a>
-    <div id="imageContainer">
-        <img id="highQualityImage" src="assets/invite.png" alt="invite">
-    </div> -->
     <b>Phoebe Love Klett</b>
     <br>
     Using math and computer science to formalize natural and artificial cognition. 
