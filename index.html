@@ -40,56 +40,49 @@
                 margin: 30px;
             }
             #photoCorner {
-                margin: 20px auto; /* Center the image horizontally */
-                max-height: 300px; /* Resize image for mobile */
-                max-width: 300px;
+                position: static; /* Remove absolute positioning */
+                margin: 20px 0; /* Add space above and below */
+                align-self: flex-start; /* Align image to the left under the text */
+                max-height: 100px; /* Resize for smaller screens */
+                max-width: 100px;
             }
         }
 
     </style>
 </head>
 <body>
-    <b>Phoebe Love Klett</b>
-    <br>
-    Using math and computer science to formalize natural and artificial cognition. 
-    <br>
-    <br>
+    <div class="content">
+        <div>
+            <b>Phoebe Love Klett</b>
+            <br>
+            Using math and computer science to formalize natural and artificial cognition. 
+            <br><br>
+        </div>
 
-    Twitter: <a href="https://x.com/KlettPhoebe" target="_blank">@KlettPhoebe</a>
-    &nbsp;&nbsp;&nbsp;
-    YouTube: <a href="https://www.youtube.com/@phoebeklett/playlists" target="_blank">@phoebeklett</a>
-    <br>
-    <br>
+        <!-- Profile Image -->
+        <img id="photoCorner" src="assets/profile.jpg" alt="profile photo">
 
-    <b>Blogs</b>
-    <br>
-    <!-- On the role of physics in mathematical meaning -->
-    <a href="https://willzeng.com/shared/math.html" target="_blank">Mathematical meaning is not captured by meaning-as-use</a>    
-    <br>
-    <br>
-
-    <b>Research</b> 
-    <br>
-    <!-- Thermodynamic Bayesian Inference  -->
-    <a href="https://arxiv.org/abs/2410.01793" target="_blank">Thermodynamic Bayesian Inference </a>    
-    <br>
-    <br>
-
-    <!-- Bayesian Language Models -->
-    <a href="https://arxiv.org/abs/2406.00104" target="_blank">Scalable Bayesian Language Models </a>    
-    <br>
-    <br>
-
-    <!-- Extended Mind Transformers -->
-    <a href="https://arxiv.org/abs/2406.02332" target="_blank">Extended Mind Transformers </a>, 
-    <a href="https://www.youtube.com/watch?v=cS6M6Jec0lU",target="_blank"> Talk </a> 
-    <br>
-    <br>
-
-    Organizing <a href="https://practiceofproof.com" target="_blank">Practice of Proof</a>    
+        <!-- Remaining Content -->
+        <div>
+            Twitter: <a href="https://x.com/KlettPhoebe" target="_blank">@KlettPhoebe</a>
+            &nbsp;&nbsp;&nbsp;
+            YouTube: <a href="https://www.youtube.com/@phoebeklett/playlists" target="_blank">@KlettPhoebe</a>
+            <br><br>
+            <b>Blogs</b><br>
+            <a href="https://willzeng.com/shared/math.html" target="_blank">Mathematical meaning is not captured by meaning-as-use</a>
+            <br><br>
+            <b>Research</b><br>
+            <a href="https://arxiv.org/abs/2410.01793" target="_blank">Thermodynamic Bayesian Inference </a>
+            <br><br>
+            <a href="https://arxiv.org/abs/2406.00104" target="_blank">Scalable Bayesian Language Models </a>
+            <br><br>
+            <a href="https://arxiv.org/abs/2406.02332" target="_blank">Extended Mind Transformers </a>,
+            <a href="https://www.youtube.com/watch?v=cS6M6Jec0lU" target="_blank"> Talk </a>
+            <br><br>
+            Organizing <a href="https://practiceofproof.com" target="_blank">Practice of Proof</a>
+        </div>
+    </div>
 
 
-    <!-- Photo in the upper-right corner -->
-    <img id="photoCorner" src="assets/profile.jpg" alt="profile photo">
 </body>
 </html>
