@@ -40,8 +40,14 @@
                 margin: 30px;
             }
             #photoCorner {
-                height: 80px; /* Reduce size for smaller screens */
-                width: 80px; /* Scale down the photo for smaller screens */
+                position: static; /* Removes absolute positioning */
+                display: block;
+                margin: 20px auto; /* Centers the image on mobile */
+                max-height: 150px; /* Scales down the image */
+                max-width: 150px;
+
+                /* height: 80px; /* Reduce size for smaller screens */
+                /* width: 80px; Scale down the photo for smaller screens */
             }
         }
 
